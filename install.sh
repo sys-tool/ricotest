@@ -16,6 +16,7 @@ echo
 read -p "输入你的api端口：" myapiport 
 echo
 echo "-----$myapiport-----"
+mkdir v2;mv v2
 #安装docker
 curl -sSL https://get.docker.com | bash
 service docker restart
@@ -24,7 +25,6 @@ curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compos
 chmod +x /usr/local/bin/docker-compose
 curl -L https://raw.githubusercontent.com/docker/compose/1.8.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 clear
-mkdir v2;mv v2
 wget -L https://raw.githubusercontent.com/961644045/ricotest/master/docker-compose.yml
 sed -i "s/sspanel_url:.*/sspanel_url: \"${sspanelurl}\"/"  ./docker-compose.yml
 sed -i "s/key:.*/key: '$mukey'/g" ./docker-compose.yml
