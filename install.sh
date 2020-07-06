@@ -16,7 +16,7 @@ echo
 read -p "输入你的api端口：" myapiport 
 echo
 echo "-----$myapiport-----"
-mkdir v2;mv v2
+mkdir v2;cd v2
 #安装docker
 curl -sSL https://get.docker.com | bash
 service docker restart
