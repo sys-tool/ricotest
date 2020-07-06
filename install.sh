@@ -3,7 +3,7 @@
 echo
 read -p "输入你的sspanel_url:" myurl
 echo "$myurl"
-sleep 100
+sleep 1
 read -p "输入你的mukey：" mukey
 read -p "输入你node_id：" myid
 read -p "输入你的api端口：" myapiport 
