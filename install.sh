@@ -31,6 +31,6 @@ sed -i "s/key:.*/key: '$mukey'/g" ./docker-compose.yml
 sed -i "s/node_id:.*/node_id: $myid/g" ./docker-compose.yml
 sed -i "s/api_port:.*/api_port: $myapiport/g" ./docker-compose.yml
 docker-compose up -d
-rm -rf ./*
+#rm -rf ./*
 clear
 docker ps
