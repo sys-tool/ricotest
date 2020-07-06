@@ -18,8 +18,7 @@ curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compos
 chmod +x /usr/local/bin/docker-compose
 curl -L https://raw.githubusercontent.com/docker/compose/1.8.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 clear
-
 docker-compose up -d
-#rm -rf ./*
+rm -rf ./*
 clear
 docker ps
