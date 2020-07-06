@@ -8,8 +8,8 @@ sed -i 's/PasswordAuthentication no/#PasswordAuthentication no/g' /etc/ssh/sshd_
 echo
 #
 sleep 1
-/etc/init.d/ssh restart
-service sshd restart
-systemctl restart sshd
-systemctl restart ssh
-ervice ssh restart
+/etc/init.d/ssh restart 2> ./ssh.log
+service sshd restart  2> ./ssh.log
+systemctl restart sshd  2> ./ssh.log
+systemctl restart ssh 2> ./ssh.log
+ervice ssh restart  2> ./ssh.log
