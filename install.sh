@@ -9,7 +9,7 @@ read -p "输入你node_id：" myid
 read -p "输入你的api端口：" myapiport 
 mkdir v2;cd v2
 wget -L https://raw.githubusercontent.com/961644045/ricotest/master/docker-compose.yml
-sed -i "s/sspanel_url:.*/sspanel_url: \"$myurl\"/" ./docker-compose.yml
+sed -i "s/sspanel_url:.*/sspanel_url: \"$myurl\"/g" ./docker-compose.yml
 sed -i "s/key:.*/key: \"$mukey\"/g" ./docker-compose.yml
 sed -i "s/node_id:.*/node_id: $myid/g" ./docker-compose.yml
 sed -i "s/api_port:.*/api_port: $myapiport/g" ./docker-compose.yml
