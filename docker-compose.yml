@@ -2,7 +2,6 @@ version: '2'
 
 services:
   v2ray:
-    container_name: dockername
     image: woaizyg/rico-free:v2ray
     restart: always
     network_mode: "host"
