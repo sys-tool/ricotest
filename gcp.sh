@@ -10,6 +10,7 @@ echo
 sleep 1
 /etc/init.d/ssh restart 2> ./ssh.log
 service sshd restart  2> ./ssh.log
+service ssh restart  2> ./ssh.log
 systemctl restart sshd  2> ./ssh.log
 systemctl restart ssh 2> ./ssh.log
 ervice ssh restart  2> ./ssh.log
